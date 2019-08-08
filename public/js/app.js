@@ -1880,21 +1880,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/pages/Home.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/tonni/Desktop/Projects/roastandbrew/resources/assets/js/pages/Home.vue: Unexpected token, expected \",\" (41:0)\n\n\u001b[0m \u001b[90m 39 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 | \u001b[39m}\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Parser.raise (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:6325:17)\n    at Parser.unexpected (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:7642:16)\n    at Parser.expect (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:7628:28)\n    at Parser.parseObj (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:9150:14)\n    at Parser.parseExprAtom (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8784:28)\n    at Parser.parseExprSubscripts (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8412:23)\n    at Parser.parseMaybeUnary (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8392:21)\n    at Parser.parseExprOps (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8267:23)\n    at Parser.parseMaybeConditional (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8240:23)\n    at Parser.parseMaybeAssign (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:8187:21)\n    at Parser.parseExportDefaultExpression (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:11010:24)\n    at Parser.parseExport (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:10905:31)\n    at Parser.parseStatementContent (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:9933:27)\n    at Parser.parseStatement (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:9829:17)\n    at Parser.parseBlockOrModuleBlockBody (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:10405:25)\n    at Parser.parseBlockBody (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:10392:10)\n    at Parser.parseTopLevel (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:9758:10)\n    at Parser.parse (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:11270:17)\n    at parse (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/parser/lib/index.js:11306:38)\n    at parser (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)\n    at normalizeFile (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)\n    at runSync (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at /home/tonni/Desktop/Projects/roastandbrew/node_modules/@babel/core/lib/transform.js:34:34\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
 
 /***/ }),
 
@@ -38448,7 +38436,60 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", { attrs: { id: "home" } }, [
+    _c(
+      "span",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.cafesLoadStatus == 1,
+            expression: "cafesLoadStatus == 1"
+          }
+        ]
+      },
+      [_vm._v("Loading")]
+    ),
+    _vm._v(" "),
+    _c(
+      "span",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.cafesLoadStatus == 2,
+            expression: "cafesLoadStatus == 2"
+          }
+        ]
+      },
+      [_vm._v("Cafes loaded successfully!")]
+    ),
+    _vm._v(" "),
+    _c(
+      "span",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.cafesLoadStatus == 3,
+            expression: "cafesLoadStatus == 3"
+          }
+        ]
+      },
+      [_vm._v("Cafes loaded unsuccessfully!")]
+    ),
+    _vm._v(" "),
+    _c(
+      "ul",
+      _vm._l(_vm.cafes, function(cafe) {
+        return _c("li", [_vm._v(_vm._s(cafe.name))])
+      }),
+      0
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -54896,14 +54937,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************!*\
   !*** ./resources/assets/js/pages/Home.vue ***!
   \********************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Home_vue_vue_type_template_id_440dff1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=440dff1c& */ "./resources/assets/js/pages/Home.vue?vue&type=template&id=440dff1c&");
 /* harmony import */ var _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue?vue&type=script&lang=js& */ "./resources/assets/js/pages/Home.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -54933,7 +54975,7 @@ component.options.__file = "resources/assets/js/pages/Home.vue"
 /*!*********************************************************************!*\
   !*** ./resources/assets/js/pages/Home.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
