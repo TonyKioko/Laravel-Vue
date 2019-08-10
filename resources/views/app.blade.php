@@ -5,7 +5,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link href="/css/app.css" rel="stylesheet" type="text/css"/>
-
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
         <title>Roast</title>
