@@ -61162,6 +61162,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _pages_Layout_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Layout.vue */ "./resources/assets/js/pages/Layout.vue");
+/* harmony import */ var _pages_Home_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Home.vue */ "./resources/assets/js/pages/Home.vue");
+/* harmony import */ var _pages_Cafes_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Cafes.vue */ "./resources/assets/js/pages/Cafes.vue");
+/* harmony import */ var _pages_NewCafe_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/NewCafe.vue */ "./resources/assets/js/pages/NewCafe.vue");
+/* harmony import */ var _pages_Cafe_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Cafe.vue */ "./resources/assets/js/pages/Cafe.vue");
+
+
+
+
+
 
 
 /*
@@ -61173,23 +61183,23 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/',
     name: 'layout',
-    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Home', __webpack_require__(/*! ./pages/Layout.vue */ "./resources/assets/js/pages/Layout.vue")),
+    component: _pages_Layout_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
     children: [{
-      path: '/',
+      path: 'home',
       name: 'home',
-      component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Home', __webpack_require__(/*! ./pages/Home.vue */ "./resources/assets/js/pages/Home.vue"))
+      component: _pages_Home_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
     }, {
       path: '/cafes',
       name: 'cafes',
-      component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Cafes', __webpack_require__(/*! ./pages/Cafes.vue */ "./resources/assets/js/pages/Cafes.vue"))
+      component: _pages_Cafes_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
     }, {
       path: '/cafes/new',
       name: 'newcafe',
-      component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('NewCafe', __webpack_require__(/*! ./pages/NewCafe.vue */ "./resources/assets/js/pages/NewCafe.vue"))
+      component: _pages_NewCafe_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
     }, {
       path: '/cafes/:id',
       name: 'cafe',
-      component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Cafe', __webpack_require__(/*! ./pages/Cafe.vue */ "./resources/assets/js/pages/Cafe.vue"))
+      component: _pages_Cafe_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
     }]
   }]
 }));
