@@ -15,7 +15,7 @@ export default new VueRouter({
             children:[
 
                 {
-                    path: 'home',
+                    path: '/',
                     name: 'home',
                     component: Vue.component( 'Home', require( './pages/Home.vue' ) )
                 },
