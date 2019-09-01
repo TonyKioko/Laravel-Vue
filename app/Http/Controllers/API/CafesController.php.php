@@ -25,7 +25,7 @@ class CafesController extends Controller
 
     }
 
-    public function postNewCafe(Request $request){
+    public function postNewCafe(StoreCafeRequest $request){
 
         $cafe = new Cafe();
         $cafe->name     = $request->get('name');

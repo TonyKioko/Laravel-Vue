@@ -7728,3 +7728,8 @@ html.is-reveal-open body {
   }
 }
 
+span.validation {
+  color: red;
+  display: block;
+}
+
