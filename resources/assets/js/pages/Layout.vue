@@ -4,7 +4,7 @@
 
 <template>
   <div id="app-layout">
-        <navigation></navigation>
+        <Navigation></Navigation>
         <router-view></router-view>
   </div>
 </template>

@@ -78,7 +78,8 @@
     },
       methods:{
             submitNewCafe(){
-                if( this.validateNewCafe() ){
+              console.log('Form submitted...')
+                // if( this.validateNewCafe() ){
                 this.$store.dispatch( 'addCafe', {
                 name: this.name,
                 address: this.address,
@@ -86,7 +87,7 @@
                 state: this.state,
                 zip: this.zip
           });
-                }
+                // }
           },
       validateNewCafe(){
             let validNewCafeForm = true;

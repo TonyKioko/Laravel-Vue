@@ -2,15 +2,15 @@ import { ROAST_CONFIG } from '../config.js'
 
 export default {
     getCafes: function(){
-        return axios.get( ROAST_CONFIG.API_URL + '/cafes' );
+        return axios.get( 'http://localhost:8000/api/v1' + '/cafes' );
     },
 
     getCafe: function( cafeID ){
-        return axios.get( ROAST_CONFIG.API_URL + '/cafes/' + cafeID );
+        return axios.get( 'http://localhost:8000/api/v1' + '/cafes/' + cafeID );
       },
 
     postAddNewCafe: function( name, address, city, state, zip ){
-        return axios.post( ROAST_CONFIG.API_URL + '/cafes',
+        return axios.post( 'http://localhost:8000/api/v1' + '/cafes',
             {
             name: name,
             address: address,

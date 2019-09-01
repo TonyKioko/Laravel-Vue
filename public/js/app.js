@@ -2157,15 +2157,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitNewCafe: function submitNewCafe() {
-      if (this.validateNewCafe()) {
-        this.$store.dispatch('addCafe', {
-          name: this.name,
-          address: this.address,
-          city: this.city,
-          state: this.state,
-          zip: this.zip
-        });
-      }
+      console.log('Form submitted...'); // if( this.validateNewCafe() ){
+
+      this.$store.dispatch('addCafe', {
+        name: this.name,
+        address: this.address,
+        city: this.city,
+        state: this.state,
+        zip: this.zip
+      }); // }
     },
     validateNewCafe: function validateNewCafe() {
       var validNewCafeForm = true;
@@ -44280,7 +44280,7 @@ var render = function() {
   return _c(
     "div",
     { attrs: { id: "app-layout" } },
-    [_c("navigation"), _vm._v(" "), _c("router-view")],
+    [_c("Navigation"), _vm._v(" "), _c("router-view")],
     1
   )
 }
@@ -60513,13 +60513,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   getCafes: function getCafes() {
-    return axios.get(_config_js__WEBPACK_IMPORTED_MODULE_0__["ROAST_CONFIG"].API_URL + '/cafes');
+    return axios.get('http://localhost:8000/api/v1' + '/cafes');
   },
   getCafe: function getCafe(cafeID) {
-    return axios.get(_config_js__WEBPACK_IMPORTED_MODULE_0__["ROAST_CONFIG"].API_URL + '/cafes/' + cafeID);
+    return axios.get('http://localhost:8000/api/v1' + '/cafes/' + cafeID);
   },
   postAddNewCafe: function postAddNewCafe(name, address, city, state, zip) {
-    return axios.post(_config_js__WEBPACK_IMPORTED_MODULE_0__["ROAST_CONFIG"].API_URL + '/cafes', {
+    return axios.post('http://localhost:8000/api/v1' + '/cafes', {
       name: name,
       address: address,
       city: city,
